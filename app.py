@@ -13,7 +13,7 @@ app = Flask(__name__)
 CORS(app)  # Allow Chrome extension to call this
 
 # ── Load BERT model 
-MODEL_DIR = os.path.join(os.path.dirname(__file__), 'models', 'bert-phishing-url')
+MODEL_DIR = "kanikathakur/phishing-bert-model"
 
 print(f"Loading BERT model from: {MODEL_DIR}")
 tokenizer  = AutoTokenizer.from_pretrained(MODEL_DIR)
